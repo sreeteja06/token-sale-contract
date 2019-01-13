@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Transfer Tokens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <form role="form">
+          <div class="for/;m-group">
+            <div class="input-group">
+              <label>ToAddress</label>
+              <input
+                id="toAddress"
+                class="input-lg"
+                type="text"
+                name="Address"
+                value="1"
+              /><br />
+              <label>numberOfTokens</label>
+              <input
+                id="numberOfToken"
+                class="input-lg"
+                type="number"
+                name="number"
+                value="1"
+                pattern="[0-9]"
+              /><br />
+              <button type="submit" class="btn btn-primary btn-lg">
+                Buy Tokens
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/transfer.js"></script>
+  </body>
+</html>
